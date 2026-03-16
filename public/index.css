@@ -1,0 +1,73 @@
+@import url('./theme.css');
+@import url('./designsystemet/index.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	color: var(--ds-color-neutral-text-default);
+  font-family: var(--ds-font-family), sans-serif;
+  font-feature-settings: "cv05" 1; /* Enable lowercase l with tail */
+}
+.container {
+	--grid-gap: var(--ds-size-5);
+	--page-spacing-top: var(--ds-size-7);
+	--page-spacing-bottom: var(--ds-size-7);
+	--grid-max-width: 960px;
+	--grid-padding: clamp(1rem, calc(0.27rem + 3.64vw), 3rem);
+
+	width: min(100%, var(--grid-max-width));
+	margin: 0 auto;
+	padding-inline: var(--grid-padding);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	z-index: 1;
+	
+}
+
+.page-content {
+	gap: var(--ds-size-5);
+	padding-block: var(--ds-size-7) var(--ds-size-10);
+}
+
+.content-section > * + * {
+	margin-top: var(--ds-size-3);
+}
+
+.intro {
+	gap: var(--ds-size-3);
+}
+
+.eyebrow {
+	color: var(--ds-color-neutral-text-subtle);
+	font-weight: var(--ds-font-weight-medium);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.steps-list {
+	padding-inline-start: var(--ds-size-7);
+}
+
+.steps-list li + li {
+	margin-top: var(--ds-size-4);
+}
+
+section {
+	scroll-margin-top: var(--ds-size-8);
+}
+
+@media (max-width: 768px) {
+	.header > .container {
+		gap: var(--ds-size-2);
+		align-items: flex-start;
+	}
+
+	.page-content {
+		padding-block: var(--ds-size-5) var(--ds-size-8);
+	}
+}
