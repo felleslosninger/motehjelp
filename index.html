@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Møtehjelp | Digdir</title>
+    <title>Lenovo Teams-møterom – slik bruker du rommet</title>
     <link rel="stylesheet" href="public/index.css">
     <link
       rel="stylesheet"
@@ -12,77 +12,258 @@
       crossorigin="anonymous"
     />
 </head>
-<body data-color-scheme="dark">
+<body data-color-scheme="auto">
   <main id="main-content" class="container page-content">
-        <section id="viktig-info" class="ds-alert" data-color="warning" aria-labelledby="viktig-info-title">
-      <h2 id="viktig-info-title" class="ds-heading" data-size="xs">Under Arbeid</h2>
-    </section>
-<!--     <section class="intro content-section" aria-labelledby="page-title">
-      <p class="eyebrow ds-paragraph" data-size="sm">Videokonferanse</p>
-      <h1 id="page-title" class="ds-heading" data-size="lg">Introduksjon til videokonferanse</h1>
+
+    <!-- Intro -->
+    <section class="intro content-section" aria-labelledby="page-title">
+      <p class="eyebrow ds-paragraph" data-size="sm">Teams-møterom</p>
+      <h1 id="page-title" class="ds-heading" data-size="lg">Lenovo Teams-møterom – slik bruker du rommet</h1>
       <p class="ds-paragraph" data-size="md" data-variant="long">
-        Her finner du en enkel innføring i hvordan du deltar i Teams-møter fra videomøterom.
+        Kort veiledning for møterom med Teams-løsning. Følg stegene under – dette dekker de vanligste situasjonene.
       </p>
     </section>
 
-    <section id="delta-i-teams" class="content-section" aria-labelledby="delta-i-teams-title">
-      <h2 id="delta-i-teams-title" class="ds-heading" data-size="sm">Slik deltar du i Teams-møter fra videomøterom</h2>
-      <ol class="ds-list steps-list">
-        <li>
+    <!-- ====== STARTE MØTE ====== -->
+    <section id="starte-mote" class="content-section" aria-labelledby="starte-mote-title">
+      <h2 id="starte-mote-title" class="ds-heading" data-size="md">Starte møte</h2>
+
+      <!-- Alternativ 1 – Inviter rommet -->
+      <div class="ds-card">
+        <div class="ds-card__block">
+          <h3 class="ds-heading" data-size="xs">Inviter møterommet i møteinnkallingen</h3>
+          <span class="ds-tag" data-color="success">Anbefalt</span>
           <p class="ds-paragraph" data-size="md" data-variant="long">
-            Trykk <strong>"Bli med"</strong> pa styringspanelet. Knappen er tilgjengelig fra 10 minutter
-            før møtet starter og frem til 6 minutter etter start.
+            Dette er den enkleste måten å starte møtet.
           </p>
-        </li>
-        <li>
+          <ol class="ds-list steps-list">
+            <li>Opprett møtet som et Teams-møte.</li>
+            <li>Legg til møterommet som deltaker eller plassering.</li>
+            <li>Møtet vises da automatisk på skjermen i rommet.</li>
+            <li>Trykk <strong>«Bli med»</strong> for å starte.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Alternativ 2 – Starte i rommet -->
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Starte møtet i rommet</summary>
+          <ol class="ds-list steps-list">
+            <li>Gå inn i møterommet.</li>
+            <li>Finn møtet på skjermen.</li>
+            <li>Trykk <strong>«Bli med»</strong>. Dette er den største knappen på skjermen.</li>
+          </ol>
+          <figure class="guide-figure">
+            <img src="/teams_rom_bli_med.png" alt="Startskjerm i Teams Room med «Bli med»-knappen markert" loading="lazy" />
+            <figcaption class="ds-paragraph" data-size="sm">Startskjerm i Teams Room. «Bli med»-knappen er markert.</figcaption>
+          </figure>
+        </details>
+      </div>
+
+      <!-- Alternativ 3 – Rommet er ikke invitert -->
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Møte finnes, men rommet er ikke invitert</summary>
+          <ol class="ds-list steps-list">
+            <li>Åpne møtet i Outlook eller Teams.</li>
+            <li>Legg til møterommet som deltaker.</li>
+            <li>Send oppdatering.</li>
+            <li>Møtet vises da på skjermen i rommet.</li>
+          </ol>
+          <div class="ds-alert" data-color="info">
+            <p class="ds-paragraph" data-size="sm">Sjekk at rommet er tilgjengelig (ikke opptatt).</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Alternativ 4 – Møte med ID -->
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Møte med ID (Teams / Webex / eksterne møter)</summary>
           <p class="ds-paragraph" data-size="md" data-variant="long">
-            Hvis du ikke ser <strong>"Bli med"</strong>, finn møtet under <strong>"Kalender"</strong>.
-            Et lite tall på knappen viser antall kalenderoppføringer.
+            Bruk dette hvis:
           </p>
-        </li>
-        <li>
-          <p class="ds-paragraph" data-size="md" data-variant="long">
-            Hvis <strong>"Bli med"</strong> fortsatt mangler, kan du ringe
-            <strong>10*[Videokonferanse-ID]</strong>, for eksempel <strong>10*123124535</strong>.
-            Stjernetegnet skal være med.
-          </p>
-        </li>
-        <li>
-          <p class="ds-paragraph" data-size="md" data-variant="long">
-            Trykk på <strong>"Ring"</strong>, tast inn <strong>10*[Videokonferanse-ID]</strong> og trykk
-            <strong>"Ring"</strong> på nytt.
-          </p>
-        </li>
-      </ol>
+          <ul class="ds-list">
+            <li>Møtet ikke vises i rommet.</li>
+            <li>Rommet ikke er invitert.</li>
+            <li>Du deltar i eksternt møte.</li>
+          </ul>
+          <ol class="ds-list steps-list">
+            <li>Trykk <strong>«Mer»</strong> (···) på touchskjermen.</li>
+            <li>Velg <strong>«Bli med ved hjelp av ID»</strong>.</li>
+            <li>Tast inn møte-ID og eventuell kode.</li>
+          </ol>
+          <figure class="guide-figure">
+            <img src="public/teams_rom_frontside.png" alt="Meny i Teams Room med «Mer» og «Bli med ved hjelp av ID» markert" loading="lazy" />
+            <figcaption class="ds-paragraph" data-size="sm">Meny i Teams Room. «Mer» og «Bli med ved hjelp av ID #» er markert.</figcaption>
+          </figure>
+          <div class="ds-alert" data-color="warning">
+            <p class="ds-paragraph" data-size="sm">Noen funksjoner kan være begrenset sammenlignet med Teams-møter.</p>
+          </div>
+        </details>
+      </div>
     </section>
 
-    <section id="viktig-info" class="ds-alert" data-color="warning" aria-labelledby="viktig-info-title">
-      <h2 id="viktig-info-title" class="ds-heading" data-size="xs">Viktig informasjon</h2>
-      <p class="ds-paragraph" data-size="md" data-variant="long">
-        <strong>10*[Videokonferanse-ID]</strong> fungerer ikke hvis møteinnkaller er fra et annet firma.
-        Da må du følge beskrivelsen i mottatt innkalling.
-      </p>
-      <p class="ds-paragraph" data-size="md" data-variant="long">
-        I Teams-innkalling finner du dette under lenken <strong>"Mer informasjon"</strong>.
-        <strong>"møte-ID (i Teams)"</strong> eller <strong>"Teams meeting ID"</strong> med passord
-        kan brukes der det etterspørres spesifikt.
-      </p>
+    <hr class="ds-divider" />
+
+    <!-- ====== DELE SKJERM ====== -->
+    <section id="dele-skjerm" class="content-section" aria-labelledby="dele-skjerm-title">
+      <h2 id="dele-skjerm-title" class="ds-heading" data-size="md">Dele skjerm</h2>
+
+      <!-- Med kabel -->
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Med kabel (anbefalt)</summary>
+          <ol class="ds-list steps-list">
+            <li>Koble til HDMI eller USB-C.</li>
+            <li>Deling starter automatisk.</li>
+          </ol>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Hvis ikke:
+          </p>
+          <ol class="ds-list steps-list">
+            <li>Trykk <strong>«Del»</strong> på touchskjermen.</li>
+            <li>Velg <strong>HDMI</strong>.</li>
+          </ol>
+          <div class="ds-alert" data-color="success">
+            <p class="ds-paragraph" data-size="sm">Dette er den mest stabile løsningen.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Uten kabel -->
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Uten kabel (trådløs)</summary>
+          <div class="ds-alert" data-color="info">
+            <p class="ds-paragraph" data-size="sm">Trådløs deling krever et Teams-møte.</p>
+          </div>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            <strong>Deling fra PC:</strong>
+          </p>
+          <ol class="ds-list steps-list">
+            <li>Åpne Teams-møtet på PC og i møterommet.</li>
+            <li>Trykk <strong>«Del»</strong> (pil opp i møtelinjen).</li>
+            <li>
+              Velg hva du vil dele:
+              <ul class="ds-list">
+                <li>Skjerm</li>
+                <li>Vindu</li>
+                <li>Presentasjon</li>
+              </ul>
+            </li>
+          </ol>
+          <figure class="guide-figure">
+            <img src="public/teams_del_skjerm.png" alt="Teams på PC med «Del»-knappen markert i møtelinjen" loading="lazy" />
+            <figcaption class="ds-paragraph" data-size="sm">Teams på PC. «Del»-knappen (pil opp) er markert i møtelinjen.</figcaption>
+          </figure>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            <strong>Hvis du ikke har et møte:</strong>
+          </p>
+          <ol class="ds-list steps-list">
+            <li>Start et raskt møte fra panelet.</li>
+            <li>Bli med på både PC og i møterommet.</li>
+          </ol>
+          <div class="ds-alert" data-color="warning">
+            <p class="ds-paragraph" data-size="sm">Teams-rom støtter kun trådløs deling via Teams-møte.</p>
+          </div>
+        </details>
+      </div>
     </section>
 
-    <section id="delta-med-pc" class="content-section" aria-labelledby="delta-med-pc-title">
-      <h2 id="delta-med-pc-title" class="ds-heading" data-size="sm">Deltar du med PC fra et videomøterom?</h2>
-      <p class="ds-paragraph" data-size="md" data-variant="long">
-        Bruker du videosystemet og PC i samme Teams-møte og rom, kan det gi lydutfordringer.
-        Velg derfor <strong>"Ikke bruk lyd"</strong> når du starter møtet fra PC.
-      </p>
-      <p class="ds-paragraph" data-size="md" data-variant="long">
-        Du kan også skru av PC-høyttaler og PC-mikrofon manuelt.
-      </p>
-      <p class="ds-paragraph" data-size="md" data-variant="long">
-        Det anbefales at minst en deltaker er med på PC for å følge chat og slippe inn eksterne.
-        Da kan du også dele/presentere uten kabel eller dongel.
-      </p>
-    </section> -->
+    <hr class="ds-divider" />
+
+    <!-- ====== LYD OG KAMERA ====== -->
+    <section id="lyd-og-kamera" class="content-section" aria-labelledby="lyd-kamera-title">
+      <h2 id="lyd-kamera-title" class="ds-heading" data-size="md">Lyd og kamera</h2>
+
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Lyd og kamera – kontroller</summary>
+          <ul class="ds-list">
+            <li><strong>Mikrofon:</strong> styres på bordet eller på touchskjermen.</li>
+            <li><strong>Kamera:</strong> slå av/på via kameraikon.</li>
+            <li><strong>Volum:</strong> justeres på touchskjermen.</li>
+          </ul>
+          <figure class="guide-figure">
+            <img src="public/teams_rom_volum_og_kamera.png" alt="Kontrollpanel i Teams-møte med lyd- og kamerakontroller markert" loading="lazy" />
+            <figcaption class="ds-paragraph" data-size="sm">Kontrollpanel i møte. Volum, kamera og mikrofon justeres her.</figcaption>
+          </figure>
+        </details>
+      </div>
+    </section>
+
+    <hr class="ds-divider" />
+
+    <!-- ====== VANLIGE PROBLEMER ====== -->
+    <section id="vanlige-problemer" class="content-section" aria-labelledby="vanlige-problemer-title">
+      <h2 id="vanlige-problemer-title" class="ds-heading" data-size="md">Vanlige problemer</h2>
+
+      <div class="ds-card">
+        <details class="ds-details">
+          <summary>Møtet vises ikke</summary>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Rommet er ikke invitert. Legg til rommet som deltaker i møteinnkallingen og send oppdatering.
+          </p>
+        </details>
+        <details class="ds-details">
+          <summary>Ingen lyd</summary>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Lydplanken under skjermen er av. Hold inne knappen til høyre til lyset i ThinkSmart-logoen tennes.
+          </p>
+        </details>
+        <details class="ds-details">
+          <summary>Ekko i møtet</summary>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Flere enheter i rommet har lyd på. Skru av lyd på alle enheter bortsett fra romenheten.
+          </p>
+        </details>
+        <details class="ds-details">
+          <summary>Skjermdeling fungerer ikke</summary>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Mangler Teams-møte eller kabel. Sørg for at du enten har koblet til HDMI/USB-C, eller at du deler via et aktivt Teams-møte.
+          </p>
+        </details>
+        <details class="ds-details">
+          <summary>Finner ikke møte</summary>
+          <p class="ds-paragraph" data-size="md" data-variant="long">
+            Bruk møte-ID. Trykk <strong>«Mer»</strong> → <strong>«Bli med ved hjelp av ID»</strong> og tast inn møte-ID.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <hr class="ds-divider" />
+
+    <!-- ====== FEILMELDING ====== -->
+    <section id="feilmelding" class="content-section" aria-labelledby="feilmelding-title">
+      <h2 id="feilmelding-title" class="ds-heading" data-size="md">Feilmelding</h2>
+
+      <div class="ds-alert" data-color="danger">
+        <h3 class="ds-heading" data-size="xs">Noe fungerer ikke?</h3>
+        <p class="ds-paragraph" data-size="md" data-variant="long">
+          <a class="ds-link" href="https://forms.office.com/pages/responsepage.aspx?id=D1aOAK8I7EygVrNUR1A5kY5Po1DctntGvoEOU34ScJ5UN1ZYMldTVEg2RURXVTNBV1M3RDBDWE02SC4u&route=shorturl" target="_blank" rel="noopener noreferrer">
+            Meld feil på møterom
+          </a>
+        </p>
+      </div>
+
+      <div class="ds-alert" data-color="info">
+        <h3 class="ds-heading" data-size="xs">Mer informasjon</h3>
+        <p class="ds-paragraph" data-size="md" data-variant="long">
+          <a class="ds-link" href="https://support.microsoft.com/nb-no/office/microsoft-teams-rom-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2" target="_blank" rel="noopener noreferrer">
+            Microsoft Teams Rooms (Windows) – Microsoft dokumentasjon
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== BILDEKILDE ====== -->
+    <p class="ds-paragraph" data-size="xs">
+      Bildene på denne siden er hentet fra <a class="ds-link" href="https://support.microsoft.com/nb-no/office/microsoft-teams-rom-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2" target="_blank" rel="noopener noreferrer">Microsofts dokumentasjon for Teams Rooms</a>.
+    </p>
+
   </main>
 </body>
 </html>
